@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* general propety */
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-1{
+	display: flex;
+}
+.flex30{
+    flex: 0 1 40%;
+}
+.flex40{
+    flex: 0 1 30%;
+}
+.flex48{
+    flex: 0 1 48%;
+    margin-bottom: 40px;
+}
+.flex60{
+    flex: 0 1 50%;
+}
+.justify-content{
+    justify-content: space-around;
+}
+.align-item{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    color: #C6C8CB;
+    font-size: 12px;
+}
+.btn{
+    /* color: white; */
+    background-color: #E9563B;
+    border: 0;
+    padding: 4px;
+    font-size: 12px;
+}
+/* header */
+header{
+    background: linear-gradient(rgba(102,109,117,0.5), rgba(102,109,117,0.5));
+    padding: 8px 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+h1 strong{
+    color:#E9563B;
+    font-weight: 800;
+}
+nav a{
+    margin-right: 10px;
+}
+nav a:hover{
+    color: #E9563B;
+}
+.btn a:hover{
+    color: white;
+}
+/*  video section */
+
+.myVideo {
+    position: relative;
+    width: 100%;
+}
+/* video content */
+.video-content{
+    width: 100%;
+    height: 121.5vh;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+.video-content h2{
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.video-content h2 strong{
+    color: #E9563B;
+    font-size: 50px;
+}
+.video-content p{
+    text-align: center;
+    font-size: 24px;
+    /* margin: 30px 0; */
+    color: white;
+    font-weight: 800;
+    padding-top: 300px;
+    padding-bottom: 20px;
+}
+.video-content .btn{
+    width: 10%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.video-content button a:hover{
+    color: #E9563B;
+}
+/* chose program */
+.program{
+    text-align: center;
+    margin-top: 80px;
+}
+h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 900;   
+    margin-bottom: 10px;
+}
+h3 strong{
+    color: #E9563B;
+}
+.program p{
+    margin: 20px 160px;
+    color:#939393;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+/* icon content */
+.icon{
+    flex-wrap: wrap;
+}
+.content{
+    margin-left: 10px;
+}
+.content h4{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.content p{
+    color: #939393;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.content strong{
+    color: #E9563B;
+    font-size: 12px;
+    font-weight: 800;
+}
+/* quote part */
+.quote{
+    background-image: url(../assets/cta-bg.jpg);
+    width: 100%;
+    padding: 40px 0;
+    background-size: cover;
+    margin: 30px 0;
+    text-align: center;
+}
+.quote-container p{
+    margin: 20px 160px;
+    color:white;
+    font-size: 12px;
+    line-height: 1.5;
+    /* margin-bottom: 70px; */
+}
+.quote .btn{
+    width: 10%;
+    margin: 0 auto;
+    padding: 10px;
+}
+/* new section */
+
+.art{
+    margin: 50px 0;
+}
+.barbel .flex60 img{
+    width: 100%;
+}
+.barbel h4{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.barbel p{
+    color: #939393;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.barbel h4 strong{
+    color: #E9563B;
+    font-size: 12px;
+    font-weight: 800;
+}
+.barbel .btn{
+    width: 25%;
+    padding: 5px;
+}
+.box{
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #939393;
+}
+.barbel .btn1{
+    width: 93%;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+/* shedule */
+.shedule{
+    background-image: url(../assets/schedule-bg.jpg);
+    padding: 40px 0;
+    text-align: center;
+}
+.shedule span{
+    color: white;
+}
+table{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    margin: 40px auto;
+}
+td,th{
+    border: 1px solid white;
+    padding: 20px;
+}
+/* trainer */
+.flex40 img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box-1{
+    border: none;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 3px 2px 2px 2px #939393;
+}
+.box-1 small{
+    color: #E9563B;
+}
+.box-1 h4{
+    margin: 10px 0;
+    font-weight: 800;
+}
+.box-1 p{
+    color: #939393;
+}
